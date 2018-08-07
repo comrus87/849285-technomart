@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Andrew Novikov](https://up.htmlacademy.ru/htmlcss/22/user/849285).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попенко](https://htmlacademy.ru/profile/id66243)
 
 ---
 
