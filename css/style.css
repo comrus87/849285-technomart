@@ -515,6 +515,37 @@ border: 2px solid #dee3e4;
  border-bottom-width: 1px;
 }
 
+.modal-add-goods {
+ background-color: #ffffff; 
+ border-top: 7px solid #ee3643;
+}
+
+.modal-add-content {
+ font-size: 30px;
+ line-height: 30px;
+ color: #000000;
+}
+
+.button-add-goods {
+  background-color: #f1f1f1;
+}
+
+.place-order {
+ font-size: 14px;
+ line-height: 18px;
+ color: #ffffff;
+ background-color: #ee3643;
+ text-transform: uppercase; 
+}
+
+.go-buy {
+ font-size: 14px;
+ line-height: 18px;
+ color: #000000;
+ background-color: #ffffff;;
+ text-transform: uppercase; 
+}
+
 .pagination-item-current {
  font-size: 13px;
  line-height: 18px;
