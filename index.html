@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -56,24 +58,24 @@
       <main class="container">
         <section class="block-first">
           <div class="materials"> 
-           <h2 class="visually-hidden"> Материалы </h2>
-                    <a class="materials-choice" href="#">На любой вкус</a>
+           <h2 class="block-materials"> Материалы </h2>
+                    <a class="link-choice" href="#">На любой вкус</a>
                 </div>
                 <div class="instruments"> 
-           <h2 class="visually-hidden"> Инструменты </h2>
-                    <a class="materials-choice" href="#">На все случаи</a>
+           <h2 class="block-instruments"> Инструменты </h2>
+                    <a class="link-choice" href="#">На все случаи</a>
                 </div>
         <div class="technique"> 
-           <h2 class="visually-hidden"> Техника </h2>
-                    <a class="technique-сhoice" href="#">Для стройки</a>
+           <h2 class="block-technique"> Техника </h2>
+                    <a class="link-choice" href="#">Для стройки</a>
                 </div>
         <div class="discount"> 
-           <h2 class="visually-hidden"> Скидка </h2>
-                    <a class="discount-choice" href="#">На 350 товаров</a>
+           <h2 class="block-discount"> Скидка </h2>
+                    <a class="link-choice" href="#">На 350 товаров</a>
                 </div>
         <div class="delivery"> 
-           <h2 class="visually-hidden"> Доставка </h2>
-                    <a class="delivery-сhoice" href="#">Бесплатно</a>
+           <h2 class="block-delivery"> Доставка </h2>
+                    <a class="link-choice" href="#">Бесплатно</a>
                 </div>
                 <div class="slider">
                 <label for="slider-switch-item1">
@@ -84,14 +86,14 @@
                 <div class="slider-text">
                 <h2 class="slider-name"> Дрели </h2>
                  <p> Соседям на радость </p>
-                    <a class="button" href="#">Открыть каталог</a>
+                    <a class="link-slider" href="#">Открыть каталог</a>
                 </div>
             </div>
             <div class="slider-content2">
                 <div class="slider-text">
                 <h2 class="slider-name"> Перфораторы </h2>
                 <p> Настоящие мужские игрушки </p>
-                    <a class="button" href="#">Открыть каталог</a>
+                    <a class="link-slider" href="#">Открыть каталог</a>
                 </div>
             </div>
             </div>
@@ -99,7 +101,7 @@
       <section class="goods">
         <div class="popular">
               <h2 class="popular-title"> Популярные товары </h2>
-              <a class="button-link" href="#">Все популярные товары</a>
+              <a class="link-goods" href="#">Все популярные товары</a>
             </div>
            
             <ul class="list-goods">
@@ -147,7 +149,7 @@
                <section class="company">           
              <div class="popular">
               <h2 class="popular-title"> Популярные производители </h2>
-              <a class="button-link" href="#">Все производители</a>
+              <a class="link-production" href="#">Все производители</a>
             </div>
               <ul class="list-company">
                 <li class="item-company"> 
@@ -169,8 +171,8 @@
                 </ul>
               </section>
                 <section class="service">
-                <h2> Сервисы </h2>
-                <p> Хороший интернет-магазин отличается от плохого не только ценами!
+                <h2 class="service-title"> Сервисы </h2>
+                <p class="service-content"> Хороший интернет-магазин отличается от плохого не только ценами! <br>
                  Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. </p>
                  <div class="service-block">
                   <ul class="service-block-list">
@@ -190,42 +192,41 @@
                    </label> 
                  </li>
                </ul>
-<!-- Тут прийдется позднее переверстать. Это будут лейблы для радиобатонов слайдера. Но это будет позже, когда будешь оживлять слайдер -->
                      </div>
                    <div class="delivery-block">
                     <h3 class="delivery-block-name"> Доставка </h3>
-                    <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж! </p>
+                    <p class="delivery-content"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж! </p>
                    </div>
                    <div class="guarantee-block">
                     <h3 class="guarantee-block-name"> Гарантия </h3>
             
-                    <p> Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. 
+                    <p class="guarantee-content"> Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. 
                     Мы обменяем сгоревший товар на новый. Дом уж восстановите как нибудь сами. </p>
                    </div>
                     <div class="credit-block">
                     <h3 class="credit-block-name"> Кредит </h3>
             
-                    <p> Залезть в долговую яму стало проще.Кредитные консультанты придут вам на помощь. </p>
-                    <a class="button" href="#"> Отправить заявку </a>
+                    <p class="credit-content"> Залезть в долговую яму стало проще.Кредитные консультанты придут вам на помощь. </p>
+                    <a class="link-send" href="#"> Отправить заявку </a>
                    </div>          
                 </section>
 
                <section class="about-company">
                 <div class="company-technomart">
-                 <h2> Компания "Техномарт" </h2>
-                 <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+                 <h2 class="company-title"> Компания "Техномарт" </h2>
+                 <p class="company-content"> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
  
-                 <p> Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
+                 <p class="company-content"> Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
                  <ul class="list-company-technomart">
                   <li> Деловые линии </li>
                   <li> Автотрейдинг </li>
                   <li> ЖелДорЭкспедиция </li>
                  </ul>
-                  <a class="button" href="#"> Подробнее о компании </a>
+                  <a class="detail-link" href="#"> Подробнее о компании </a>
               </div> 
                 <div class="contacts">
-                  <h2> Контакты </h2>
-                  <p> Вы можете забрать товар сами, заехав в наш офис. </p>
+                  <h2 class="contact-title"> Контакты </h2>
+                  <p class="adress-content"> Вы можете забрать товар сами, заехав в наш офис. </p>
          <span class="modal-map"> x </span>
          <a class="button-map" href="#"> Заблудитесь? Напишите нам </a>
            <div class="modal-write-us">
@@ -243,14 +244,16 @@
               <label for="text-button"> Текст письма: </label>
               <input type="text" name="text-letter" id="text-button" placeholder="В свободной форме">
               </p>
-               <button class="button" type="submit"> Отправить </button>
+               <div class="modal-bottom">
+               <button class="link-send" type="submit"> Отправить </button>
+             </div>
               </form>
         </div>
             </section>
           </main>
 
       <footer class="main-footer">
-        <div class="top=footer"> 
+        <div class="top-footer"> 
           <div class="menu-footer1">
         <div class="main-logo2"> 
           <a href="index.html" class="title-logo"> Техномарт </a>
@@ -275,18 +278,18 @@
       </div>
     <div class="down-footer">
       <p class="copyright"> © 2010-2016 Компания «Техномарт»<br>Все права защищены </p> 
-    </div>
         <ul class="footer-social">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
        <p class="footer-develop">
-        <b> Обратная связь </b> 
+        <span class="connect"> Обратная связь </span> 
         <a class="button-footer" href="№"> mail@htmlacademy.ru</a>
-        <b> Разработано:</b> 
+        <span class="made-in"> Разработано:</span> 
         <a class="button-footer" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
+    </div>
 </footer>
   </body>
 </html>
