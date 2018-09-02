@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,12 +12,12 @@
 
    <header class="main-header">
 <div class="header-top"> <!--  (контейнер для всего блока) -->
-  <div class="wrap"> <!-- (Блок-центровщик, который будет задавать ширину и выравнивать контент поцентру вьюпорта) -->
+  <div class="wrap1"> <!-- (Блок-центровщик, который будет задавать ширину и выравнивать контент поцентру вьюпорта) -->
     <div class="main-logo">
       <a href="index.html" class="title-logo"> Техномарт </a>
     </div>
     <form action="#" class="header-search" method="post"> <!-- (Форма с полем поиска) -->
-      <input type="search" name="search" id="search-in-header" placeholder="Поиск:">
+      <input type="text" name="search" id="search-in-header" placeholder="Поиск:">
       <label for="search-in-header"> </label>
     </form>
     <a href="#" class="bookmarks">Закладки</a>
@@ -23,24 +25,23 @@
     <a href="#" class="order"> Оформить заказ </a>    
   </div>
 </div>
-<div class="header-bottom">  <!--  (контейнер для всего блока) -->
-  <div class="wrap"> <!-- Общий центровщик для верхнего и нижнего блоков -->
-    <div class="header-info"> <!--  (контейнер для всего верхнего блока) -->
-      <h1 class="title"> Интернет-магазин строительных материалов и инструментов для ремонта </h1>
+<div class="wrap2">  <!--  (центровщик для верхнего и нижнего) -->
+  <div class="header-info"> <!-- контейнер для среднего блока -->
+      <h1 class="title"> Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта </h1>
       <div class="contact"> <!-- (Средний блок с контактной информацией) -->
         <p class="phone">+7(812)555-05-55</p>
         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
       </div>
       <ul class="user-navigation">
-        <li class="login-link"> 
-          <a href="#">Войти</a> <!-- Ссылка, которая открывает либо форму входа\регистрации, либо перенаправляет на страницу с соотвествующей формой -->
+        <li> 
+          <a class="login-link" href="#">Войти</a> <!-- Ссылка, которая открывает либо форму входа\регистрации, либо перенаправляет на страницу с соотвествующей формой -->
         </li>
-        <li class="registration"> 
-          <a href="#">Регистрация</a> <!-- Ссылка, которая открывает либо форму входа\регистрации, либо перенаправляет на страницу с соотвествующей формой -->
+        <li> 
+          <a  class="registration" href="#">Регистрация</a> <!-- Ссылка, которая открывает либо форму входа\регистрации, либо перенаправляет на страницу с соотвествующей формой -->
         </li>
       </ul>
     </div>
-    <nav class="main-menu"><!--  (контейнер для всего нижнего блока. Семантический тег nav, предназначенный для ОСНОВНОГО меню на сайте) -->
+        <nav class="main-menu"><!--  (контейнер для всего нижнего блока. Семантический тег nav, предназначенный для ОСНОВНОГО меню на сайте) -->
         <ul class="site-navigation">
         <li> <a href="#"> Главная </a> </li>
         <li> <a href="#"> Компания </a> </li>
@@ -51,74 +52,83 @@
         <li> <a href="#"> Контакты </a> </li>
       </ul>
     </nav>
-  </div>
 </div>
    </header>
 
       <main class="container">
         <section class="block-first">
+         <div class="column-1">
           <div class="materials"> 
            <h2 class="block-materials"> Материалы </h2>
-                    <a class="link-choice" href="#">На любой вкус</a>
-                </div>
-                <div class="instruments"> 
+            <a class="link-choice" href="#">На любой вкус</a>
+            </div>
+           <div class="instruments"> 
            <h2 class="block-instruments"> Инструменты </h2>
-                    <a class="link-choice" href="#">На все случаи</a>
-                </div>
-        <div class="technique"> 
-           <h2 class="block-technique"> Техника </h2>
-                    <a class="link-choice" href="#">Для стройки</a>
-                </div>
-        <div class="discount"> 
-           <h2 class="block-discount"> Скидка </h2>
-                    <a class="link-choice" href="#">На 350 товаров</a>
-                </div>
-        <div class="delivery"> 
-           <h2 class="block-delivery"> Доставка </h2>
-                    <a class="link-choice" href="#">Бесплатно</a>
-                </div>
-                <div class="slider">
-                <label for="slider-switch-item1"> </label>
-                <input type="radio" name="slider-switch" id="slider-switch-item1" checked>
-                <label for="slider-switch-item2"> </label>
-                <input type="radio" name="slider-switch" id="slider-switch-item2">
-            <div class="slider-content1">
-                <div class="slider-text">
-                <h2 class="slider-name"> Дрели </h2>
+              <a class="link-choice" href="#">На все случаи</a>
+            </div>
+
+
+
+      <div class="slider">
+        <div class="wrap3">
+        <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+         <div class="slider-controls">
+          <label class="slider-controls-item-1" for="btn-1"></label>
+          <label class="slider-controls-item-2" for="btn-2"></label>
+         </div>
+        <ul class="slider-list">
+          <li class="slider-item"> 
+            <h2 class="slider-name"> Дрели </h2>
                  <p> Соседям на радость </p>
                     <a class="link-slider" href="#">Открыть каталог</a>
-                </div>
-            </div>
-            <div class="slider-content2">
-                <div class="slider-text">
-                <h2 class="slider-name"> Перфораторы </h2>
+            </li>
+            <li class="slider-item">
+              <h2 class="slider-name"> Перфораторы </h2>
                 <p> Настоящие мужские игрушки </p>
                     <a class="link-slider" href="#">Открыть каталог</a>
-                </div>
-            </div>
-            </div>
-        </section>
-      <section class="goods">
-        <div class="popular">
-              <h2 class="popular-title"> Популярные товары </h2>
-              <a class="link-goods" href="#">Все популярные товары</a>
-            </div>
-           
+             </li>
+        </ul>
+        </div>
+          </div>
+
+
+
+             <div class="column-2">
+              <div class="technique"> 
+                 <h2 class="block-technique"> Техника </h2>
+                   <a class="link-choice" href="#">Для стройки</a>
+                      </div>
+              <div class="discount"> 
+                 <h2 class="block-discount"> Скидка </h2>
+                          <a class="link-choice" href="#">На 350 товаров</a>
+                      </div>
+              <div class="delivery"> 
+                 <h2 class="block-delivery"> Доставка </h2>
+                          <a class="link-choice" href="#">Бесплатно</a>
+                      </div>
+                    </div>
+              </section>
+            <section class="goods">
+              <div class="popular">
+                    <h2 class="popular-title"> Популярные товары </h2>
+                    <a class="link-goods" href="#">Все популярные товары</a>
+                  </div>
             <ul class="list-goods">
                       <li class="item-goods">
-                             <div class="button-actions">
-                             <a href="#" class="buy">Купить</a>
-                             <a href="#" class="in-bookmark">В закладки</a>
-                             </div>
-                            <div class="image-goods"> <img src="img/drill1.jpg" width="220" height="144" alt="Перфоратор BOSCH BFG9000"> </div>
-                            <div class="position-drill-title"> <h3 class="drill-title">Перфоратор BOSCH BFG9000 </h3> </div>
-                            <div class="old-price-position"> <p class="old-price"> 32 500 Р. </p> </div>
-                            <div class="bg-position"> <p class="button-goods">25 500 Р.</p> </div>
+                         <div class="button-actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="in-bookmark">В закладки</a>
+                          </div>
+                          <div class="image-goods"> <img src="img/drill1.jpg" width="220" height="144" alt="Перфоратор BOSCH BFG9000"> </div>
+                           <div class="position-drill-title"> <h3 class="drill-title">Перфоратор BOSCH BFG9000 </h3> </div>
+                           <div class="old-price-position"> <p class="old-price"> 32 500 Р. </p> </div>
+                           <div class="bg-position"> <p class="button-goods">25 500 Р.</p> </div>
                       </li>
-                          <li class="item-goods">
-                            <div class="button-actions">
-                             <a href="#" class="buy">Купить</a>
-                             <a href="#" class="in-bookmark">В закладки</a>
+                         <li class="item-goods">
+                           <div class="button-actions">
+                            <a href="#" class="buy">Купить</a>
+                            <a href="#" class="in-bookmark">В закладки</a>
                            </div>
                              <div class="image-goods"><img src="img/drill2.jpg" width="220" height="144" alt="Перфоратор BOSCH BFG3000"> </div>
                             <div class="position-drill-title"><h3 class="drill-title">Перфоратор BOSCH BFG3000 </h3> </div>
@@ -183,8 +193,8 @@
                  <li>
                    <input type="radio" name="service-switch" id="guarantee-switch">
                    <label for="guarantee-switch"> Гарантия </label>
-                                </li>
-                                <li>     
+                  </li>
+                   <li>     
                    <input type="radio" name="service-switch" id="credit-switch">
                    <label for="credit-switch"> Кредит </label> 
                  </li>
