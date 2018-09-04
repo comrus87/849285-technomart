@@ -280,8 +280,8 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 53px;
 }
-
 
  .column-1 {
   display: flex;
@@ -294,7 +294,6 @@ img {
   display: flex;
   width: 300px;
   flex-wrap: wrap;
- 
 }
 
 .materials {
@@ -319,7 +318,6 @@ img {
  color: #ffffff;
  background-color: #dc91d8;
  margin: 0 0 20px 0;
-
 }
 
 .discount {
@@ -383,7 +381,6 @@ img {
 .slider-item {
   display: none;
    padding: 70px 0 70px 0;  /* че за магия? */
- 
 }
 
 .slider-item:nth-child(1) {
@@ -494,22 +491,67 @@ img {
   }
  
   
+  .goods {
+   width: 940px;
+   margin: 0 auto;
+   min-height: 428px;
+  }
 
 .popular {
+ display: inline-block;
+ width: 940px;
+ min-height: 90px;
+ margin: 0 0 20px 0;
+ padding: 0;
  color: #32425b;
  background-color: #f9f5f0;
 }
 
 .popular-title {
-  font-size: 30px;
+  display: inline-block;
+  float: left;
+  width: 262px;
+ margin: 0;
+ padding: 30px 0 30px 30px;
+ font-size: 30px;
  line-height: 30px;
  font-weight: 400;
  color: #32425b;
  text-transform: uppercase;
 }
 
-.list-goods {
+
+
+
+
+
+
+/* Карточки товара */
+.wrap-goods {
+ width: 940px;
+ min-height: 318px;
+ margin: 0 auto;
+ margin-bottom: 20px;
+}
+
+.wrap-goods ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.list-goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-goods {
+  width: 220px;
+  height: 318px;
+  border: 1px solid #eaeaea;
+  position: relative;
+  text-align:center;
 }
 
 .link-goods,
@@ -520,23 +562,34 @@ img {
  color: #ffffff;
  background-color: #ee3643;
  text-transform: uppercase;
+ display: block;
+ float: right;
+ width: 252px;
+ border-radius: 3px;
+ text-align: center;
+ padding: 12px 0;
+ margin-right: 24px;
+ margin-top: 25px;
 }
 
-.list-company {
- list-style: none;
-}
-
-.item-goods {
-  border: 1px solid #eaeaea ;
-}
-
- .buy {
+.buy {
  font-size: 14px;
  line-height: 18px;
  color: #ffffff;
  background-color: #63a63e;
  text-transform: uppercase;
  }
+
+  .buy,
+  .in-bookmark {
+    display:block;
+    width:129px;
+    margin:0 auto;
+    margin-bottom:7px;
+    padding:7px 0;
+    border:3px solid #63a63e;
+    border-bottom-color:#367315; 
+  }
 
 .in-bookmark {
   font-size: 14px;
@@ -545,28 +598,40 @@ img {
  background-color: #ffffff;
  text-transform: uppercase;
  border: 3px solid #63a63e;
+ border-bottom-color:#63a63e;
 }
+
 
 .drill-title {
   color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
- line-height: 20px;
- font-weight: 700;
+  line-height: 20px;
+  font-weight: 700;
+  min-height:40px;
+  padding:0 25px;
+  margin-top:10px;
+  margin-bottom:15px;  
 }
+
 
 .old-price {
   color: #a9a9a9;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
- line-height: 18px;
- font-weight: 700;
- text-decoration: line-through;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: line-through;
+  min-height:20px;
+  margin-top:15px;
+  margin-bottom:10px;
 }
 
 .button-goods {
-  height: 38px;
-  width: 122px;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
   color: #ffffff;
   background-color: #ee3643;
   position: relative; 
@@ -574,25 +639,126 @@ img {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+  border-radius:3px;
 }
+   
 
 .button-goods::after {
-  position: absolute;
-  right: 0;
   content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
   box-sizing: border-box;
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 0;
   border: 19px solid rgb(255, 255, 255); 
-  border-left: 19px solid #ee3643;  
+  border-left-color: #ee3643;  
+} 
+
+   .flag-new {
+   position:absolute;
+   top: -1px;
+   right: -1px;
+   width: 60px;
+   height: 60px;
+   overflow: hidden;
+   z-index: 20;
+   background: url("../img/new-flag.png") no-repeat 0 0;
+  }
+
+.button-actions {
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 218px;
+   height: 88px;
+   padding: 40px 0;
+   background-color: rgba(255,255,255,0.9);
+   z-index: 10;
+  }
+
+  .item-goods .button-actions {
+    display:none;
+  }
+  .item-goods:hover .button-actions{
+    display:block;
+  }
+
+
+ .image-goods {
+  width: 220px;
+  height: 168px;
+  }
+
+ 
+
+
+
+
+
+ .company ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
 }
 
-.item-company {
-  border: 1px solid #eaeaea;
+.popular-company-title {
+ display: inline-block;
+ float: left;
+ width: 365px;
+ margin: 0;
+ padding: 30px 0 30px 30px;
+ font-size: 30px;
+ line-height: 30px;
+ font-weight: 400;
+ color: #32425b;
+ text-transform: uppercase;
 }
+
+.wrap-company {
+ width: 940px;
+ min-height: 310px;
+ margin-bottom: 86px;
+}
+
+.list-company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.item-company {
+ width: 220px;
+ height: 145px;
+ border: 1px solid #eaeaea;
+}
+
+ .item-company img{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+  height: auto;
+  border: none;
+  }
+
+
+
+
+
+
 
 .service {
   background: #f4f7f9;
+}
+
+.wrap-service {
+ width: 940px;
+ margin: 0 auto;
+ min-height: 522px;
 }
 
 .service-title {
@@ -600,23 +766,47 @@ img {
  font-size: 30px;
  line-height: 30px;
  text-transform: uppercase;
+ padding-top: 65px;
+ padding-bottom: 30px;
+ margin: 0;
 }
 
 .service-content {
+  margin: 0;
+  padding: 0;
  color: #000000;
  font-size: 13px;
  line-height: 24px;
  font-family: "PT Sans", Arial, sans-serif;
 }
 
+.service-block-list input {
+  position: absolute;
+  opacity: 0;
+
+}
+
+.label-button {
+  margin: 0;
+  display: block;
+  width: 240px;
+  padding: 16px 0 16px 22px;
+  background-color: #32425c;
+}
+
+
+
 .service-block-list {
+  margin: 0;
+  padding: 0;
  list-style-type: none;
  color: #ffffff;
  font-size: 21px;
  line-height: 30px;
  font-weight: 700;
- background-color: #32425c;
+ 
 }
+
 
 .delivery-block-name,
 .guarantee-block-name {
