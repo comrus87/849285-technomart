@@ -11,7 +11,7 @@
 
  <header class="main-header">
 <div class="header-top"> <!--  (контейнер для всего блока) -->
-  <div class="wrap"> <!-- (Блок-центровщик, который будет задавать ширину и выравнивать контент поцентру вьюпорта) -->
+  <div class="wrap1"> <!-- (Блок-центровщик, который будет задавать ширину и выравнивать контент поцентру вьюпорта) -->
     <div class="main-logo">
       <a href="index.html" class="title-logo"> Техномарт </a>
     </div>
@@ -24,25 +24,26 @@
     <a href="#" class="order"> Оформить заказ </a>    
   </div>
 </div>
-<div class="header-bottom">  <!--  (контейнер для всего блока) -->
-  <div class="wrap"> <!-- Общий центровщик для верхнего и нижнего блоков -->
+<div class="wrap2">  
     <div class="header-info"> <!--  (контейнер для всего верхнего блока) -->
-      <h1 class="title"> Интернет-магазин строительных материалов и инструментов для ремонта </h1>
+      <h1 class="title"> Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта </h1>
       <div class="contact"> <!-- (Средний блок с контактной информацией) -->
         <p class="phone">+7(812)555-05-55</p>
         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
       </div>
+
        <div class="user-block">
           <a class="login" href="#">Равшан Джамшутович</a>
-        </div>
-      <ul class="user-navigation">
+      <ul class="user-navigation-catalog">
         <li class="my-orders"> 
           <a href="#">Мои заказы</a> 
         </li>
+        <li class="point"> </li>
         <li class="cabinet"> 
           <a href="#">Личный кабинет</a> 
         </li>
       </ul>
+      </div>
     </div>
     <nav class="main-menu">
         <ul class="site-navigation">
@@ -59,14 +60,19 @@
 </div>
    </header>
 
+
+
+
      <main class="container">
       <ul class="breadcrumbs">
-        <li> <a href="index.html"> <img src="img/icon-home.svg" alt="Домик"> </a></li>
-        <li> <a href="catalog.html"> Каталог </a></li>
-        <li> <a href="#">Инструмент</a></li>
+        <li> <a href="index.html"> <img src="img/icon-home.svg" width="17" height="17"></a></li>
+        <li> <a class="marker1" href="catalog.html"> Каталог </a></li>
+        <li> <a class="marker2" href="#"> Инструмент </a></li>
         <li class="perfarators">Перфораторы</li>
       </ul>
       <h1 class="catalog-title"> Перфораторы </h1>
+
+      <!--
       <section class="filtres">
         <h2 class="filter-title">Фильтр:</h2>
       <form action="#" class="filter" method="get" oninput="priceoutput.value=price.value">
@@ -291,6 +297,6 @@
         <a class="button-footer" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </div>
-</footer>
+</footer>  -->
   </body>
 </html>
