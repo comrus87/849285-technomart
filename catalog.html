@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -75,20 +77,19 @@
       <form action="#" class="filter" method="get">
         <fieldset>
           <legend> Цена: </legend>
-        <div class="range-filter">
-         <div class="range-controls">
-          <div class="scale">
-            <div class="bar">                 
-          </div>
-          </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
-        </div>
-        <div class="price-controls">
-          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-        </div>
-       </div>
+       <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+         <div class="price-controls">
+                <input class="price price-min" type="text" name="price-min" value="0">
+                <span> — </span>
+                <input class="price price-max" type="text" name="price-max" value="30000">
+              </div>
         </fieldset>
          <hr class="line">
 
