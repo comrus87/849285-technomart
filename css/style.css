@@ -1201,6 +1201,7 @@ margin-bottom: 25px;
  padding: 12px 0 12px 0;
  border-radius: 3px;
  text-align: center;
+ cursor: pointer;
  }
 
 .link-map:hover,
@@ -1409,6 +1410,10 @@ margin-bottom: 25px;
 
 /* Модальное окно */
 
+.modal-show {
+  display: block;
+}
+
  .modal-write-us {
  position: fixed;
  display: none;
@@ -1421,8 +1426,8 @@ margin-bottom: 25px;
  background: #ffffff;
  top: 120px;
  left: 50%;
-  margin-left: -310px;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+ margin-left: -310px;
+ box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   z-index: 200;
 }
 
@@ -1862,6 +1867,7 @@ border-radius: 3px;
  border: 10px solid #ffffff;
  border-radius: 50%;
  cursor: pointer;
+ box-sizing: content-box;
 }
 
 .min-toggle {
@@ -1960,6 +1966,10 @@ border-radius: 3px;
  background: url("../img/checkbox-off.svg") no-repeat;
 }
 
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0;
+}
+
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -1981,6 +1991,10 @@ border-radius: 3px;
  background: url("../img/radio-off.svg") no-repeat;
 }
 
+.filter-input-radio:disabled + label::before {
+  opacity: 0;
+}
+
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -1989,7 +2003,7 @@ border-radius: 3px;
   width: 25px;
   height: 25px;
  background: url("../img/radio-on.svg") no-repeat;
-}
+} 
 
 .link-filter {
  display: block;
@@ -2022,11 +2036,19 @@ border-radius: 3px;
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+
 }
 
 .pagination-list a {
   display: block;
   padding: 10px 17px 10px 17px;
+  color: #000000;
+  font-size: 13px;
+ line-height: 18px;
+ font-family: "PT Sans", Arial, sans-serif;
+ border: 1px solid #e5e5e5;
+ border-radius: 3px;
 }
 
 .pagination-list li {
@@ -2046,24 +2068,10 @@ border-radius: 3px;
   border-color: #ee3643;
 }
 
-.pagination-item-current {
- font-size: 13px;
- line-height: 18px;
+.pagination-item-current a {
  color: #ffffff;
  background-color: #ee3643; 
- font-family: "PT Sans", Arial, sans-serif;
- border-radius: 3px;
 }
-
-.pagination-item {
-  font-size: 13px;
- line-height: 18px;
- color: #000000;
- font-family: "PT Sans", Arial, sans-serif;
- border: 1px solid #e5e5e5;
- border-radius: 3px;
-}
-
 
 .about-perforators {
  background-color: #f2f6f8;

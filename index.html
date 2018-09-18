@@ -72,7 +72,7 @@
                 </div>
                  <div class="slider">
                     <div class="wrap-slider">
-                        <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+                      <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
                         <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
                         <div class="slider-controls">
                             <label class="slider-controls-item-1" for="btn-1"></label>
@@ -241,7 +241,7 @@
                 <h2 class="company-title"> Контакты </h2>
                 <p class="adress-content"> Вы можете забрать товар сами,<br> заехав в наш офис. </p>
                 <a class="modal-map" href="#"><img src="img/map1.png" width="300" height="158" alt="Карта">  </a>
-                <a class="link-map" href="#"> Заблудитесь? Напишите нам </a>
+                <a class="link-map"> Заблудитесь? Напишите нам </a>
             </div>
         </section>
     </main>
@@ -340,6 +340,22 @@
                     <div class="modal-bottom">
                         <button class="link-send" type="submit"> Отправить </button>
                     </div>
-                </div>
+                     </div>
+ <script>
+  var link = document.querySelector(".link-map");
+  
+  var popup = document.querySelector(".modal-write-us");
+  var close = popup.querySelector(".button-close-window");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+  });
+  
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+</script>
 </body>
 </html>
