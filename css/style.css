@@ -635,18 +635,18 @@ padding: 12px 0 12px 45px;
 }
 
 
-#btn-1:checked ~ .slider-list .slider-item:nth-child(1) {
+.btn-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: flex;
  flex-direction: column;
 }
 
-#btn-2:checked ~ .slider-list .slider-item:nth-child(2) {
+.btn-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: flex;
  flex-direction: column;
 }
 
-#btn-1:checked ~ .slider-controls .slider-controls-item-1::before,
-#btn-2:checked ~ .slider-controls .slider-controls-item-2::before {
+.btn-1:checked ~ .slider-controls .slider-controls-item-1::before,
+.btn-2:checked ~ .slider-controls .slider-controls-item-2::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -659,8 +659,8 @@ padding: 12px 0 12px 45px;
   }
  
 
- #btn-1:checked ~ .slider-left::before,
- #btn-2:checked ~ .slider-left::before
+ .btn-1:checked ~ .slider-left::before,
+ .btn-2:checked ~ .slider-left::before
   {
   content: "";
   position: absolute;
@@ -672,8 +672,8 @@ padding: 12px 0 12px 45px;
   cursor: pointer;
 }
 
- #btn-1:checked ~ .slider-right::after,
- #btn-2:checked ~ .slider-right::after {
+ .btn-1:checked ~ .slider-right::after,
+ .btn-2:checked ~ .slider-right::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -1103,29 +1103,29 @@ opacity: 0.3;
   display: none;
 }
 
-#button-1:checked ~ .delivery-block {
+.button1:checked ~ .delivery-block {
   display: block;
 }
 
-#button-2:checked ~ .guarantee-block {
+.button2:checked ~ .guarantee-block {
   display: block;
 }
 
-#button-3:checked ~ .credit-block {
+.button3:checked ~ .credit-block {
   display: block;
 } 
 
-#button-1:checked ~ .label-controls label[for=button-1] {
+.button1:checked ~ .label-controls label[for=button-1] {
   color: #32425c;
   background: #ffffff;
 }
 
-#button-2:checked ~ .label-controls label[for=button-2] {
+.button2:checked ~ .label-controls label[for=button-2] {
   color: #32425c;
   background: #ffffff;
 }
 
-#button-3:checked ~ .label-controls label[for=button-3] {
+.button3:checked ~ .label-controls label[for=button-3] {
   color: #32425c;
   background: #ffffff;
 }
