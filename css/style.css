@@ -1087,7 +1087,7 @@ input[type="radio"].visually-hidden {
 }
 
 .block-name {
-    display: inline-block;
+    display: block;
     margin: 0;
     padding: 0;
     color: #32425c;
