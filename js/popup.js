@@ -1,15 +1,36 @@
 var link = document.querySelector(".link-map");
 var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".button-close-window");
+var login = popup.querySelector("[name=name]");
+var email = popup.querySelector("[name=email]");
+var textletter = popup.querySelector("[name=textletter]")
+var form = popup.querySelector("form");
 
 link.addEventListener("click", function (evt) {
    evt.preventDefault();
     popup.classList.add("modal-show");
+    login.focus();
   });
-  
+
 close.addEventListener("click", function (evt) {
    evt.preventDefault();
   popup.classList.remove("modal-show");
+  });
+
+ form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value || !textletter.value) {
+      evt.preventDefault();
+      console.log("Нужно ввести ваше имя, e-mail и текст письма");
+    }
+  });
+
+ window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
   });
 
 var mapLink = document.querySelector(".modal-map");
