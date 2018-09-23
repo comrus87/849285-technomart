@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="index">
 
     <header class="main-header">
         <div class="header-top">
@@ -251,9 +251,9 @@
                 <p class="adress-content"> Вы можете забрать товар сами,
                     <br> заехав в наш офис. </p>
                 <a class="modal-map" href="img/map2.jpg"><img src="img/map1.png" width="300" height="158" alt="Карта"> </a>
-                <div class="modal-map-popup"> 
-                <iframe src="https://yandex.ru/map-widget/v1/-/CBBNfDgxPC" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
-                 <button type="button" name="close-window" class="button-close-window"> </button>
+                <div class="modal-map-popup">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CBBNfDgxPC" width="940" height="446"></iframe>
+                    <button type="button" name="close-window" class="button-close-window"> </button>
                 </div>
                 <a class="link-map" href="writeus.html"> Заблудитесь? Напишите нам </a>
             </div>
@@ -353,12 +353,12 @@
                     <textarea name="textletter" placeholder="В свободной форме"></textarea>
                 </p>
             </div>
-             <div class="modal-bottom">
-            <button class="link-send" type="submit"> Отправить </button>
-          </div>
+            <div class="modal-bottom">
+                <button class="link-send" type="submit"> Отправить </button>
+            </div>
         </form>
     </div>
-     <div class="modal-add-goods">
+    <div class="modal-add-goods">
         <h2 class="modal-add-content"> Товар добавлен в корзину! </h2>
         <button type="button" name="close-window" class="button-close-window"> </button>
         <div class="button-add-goods">
@@ -366,7 +366,7 @@
             <a href="#" class="go-buy">Продолжить покупки</a>
         </div>
     </div>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.min.js"></script>
 </body>
 
 </html>
