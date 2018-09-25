@@ -15,11 +15,14 @@ if (index) {
     close.addEventListener("click", function(evt) {
         evt.preventDefault();
         popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
     });
     form.addEventListener("submit", function(evt) {
         if (!login.value || !email.value || !textletter.value) {
             evt.preventDefault();
-            console.log("Нужно ввести ваше имя, e-mail и текст письма");
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modal-error");
         }
     });
     window.addEventListener("keydown", function(evt) {
@@ -27,6 +30,7 @@ if (index) {
             evt.preventDefault();
             if (popup.classList.contains("modal-show")) {
                 popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
             }
         }
     });
